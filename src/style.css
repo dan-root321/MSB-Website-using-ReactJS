@@ -5,6 +5,20 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --bright__yellow: #f8ff00;
+  --dark__yellow: #c79d38;
+  --black: #000000;
+  --white: #fff;
+
+  --h1: 72px;
+  --h2: 58px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .container {
   padding: 0rem calc((100vw - 1300px) / 2);
 }
@@ -86,23 +100,6 @@
   margin-top: 10px;
 }
 
-.mid__vid img:nth-child(1) {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  object-fit: cover;
-  z-index: -99;
-}
-
-.mid__vid:nth-child(2) {
-}
-
-.mid__vid img:nth-child(3) {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  object-fit: cover;
-  z-index: -99;
-}
-
 .mid__vid {
   padding-top: 5rem;
   display: flex;
@@ -110,4 +107,81 @@
   justify-content: center;
   width: 100%;
   row-gap: 2rem;
+}
+
+.mid__vid img:nth-child(1) {
+  position: absolute;
+  z-index: -999;
+  transform: translateX(-35rem);
+  width: 476px;
+  height: 595px;
+  object-fit: cover;
+}
+
+/* .mid__vid:nth-child(2) {
+} */
+
+.mid__vid img:nth-child(3) {
+  position: absolute;
+  z-index: -999;
+  transform: translateX(35rem);
+  width: 476px;
+  height: 595px;
+  object-fit: cover;
+}
+
+.get-started__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.get-started__wrapper .enrollnow {
+  width: 400px;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: var(--bright__yellow);
+  border: none;
+  text-transform: capitalize;
+  position: absolute;
+  margin-top: 5rem;
+  margin-left: 17rem;
+}
+
+.get-started__wrapper .enrollnow:hover {
+  background: var(--dark__yellow);
+}
+
+.watch-here__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+  height: 400px;
+  background: #323003;
+}
+
+.watch-here__wrapper .left__link {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  width: 80%;
+}
+
+.watch-here__wrapper .left__link a {
+  color: var(--white);
+}
+
+.left__link click-to-watch {
+  display: inline-flex;
+  background: var(--bright__yellow);
+}
+
+.left__link a {
+  font-size: 50px;
+  padding-left: 100px;
+  font-weight: 600;
 }

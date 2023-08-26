@@ -1,5 +1,5 @@
 import "./style.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function App() {
   return (
     <>
@@ -36,6 +36,7 @@ function App() {
               <p>
                 <span>Attention:</span> Employees, Students, Business Owners
               </p>
+
               <h1>
                 <span> We Have Uncovered A</span>
                 <br />
@@ -61,6 +62,31 @@ function App() {
                 alt=""
               />
             </div>
+            <div className="get-started">
+              <div className="get-started__wrapper">
+                <img
+                  src="https://static.wixstatic.com/media/2ea1d5_75c4f647a69047879a8972e906eea4b0~mv2.png/v1/crop/x_158,y_60,w_1910,h_664/fill/w_952,h_331,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BOOK%20.png"
+                  alt=""
+                />
+
+                <button className="enrollnow">Enroll now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="watch-here">
+        <div className="watch-here__wrapper">
+          <div className="left__link">
+            <a href="#">Watch The Full MSB Masterclass On Youtube 100% FREE!</a>
+            <button className="click-to-watch">CLICK HERE TO WATCH </button>
+          </div>
+          <div className="right__img">
+            <img
+              src="https://static.wixstatic.com/media/2ea1d5_83eb854eace64d03a9c4c2e4c1eb2250~mv2.jpg/v1/fill/w_489,h_233,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/maxresdefault.jpg"
+              alt=""
+            />
           </div>
         </div>
       </section>
