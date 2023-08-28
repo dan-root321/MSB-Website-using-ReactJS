@@ -8,6 +8,7 @@
 :root {
   --bright__yellow: #f8ff00;
   --dark__yellow: #c79d38;
+  --yellow__green: #9acd32;
   --black: #000000;
   --white: #fff;
 
@@ -143,7 +144,11 @@ body {
   height: 40px;
   font-size: 1.5rem;
   font-weight: 800;
-  background: var(--bright__yellow);
+  background: linear-gradient(
+    to bottom,
+    var(--bright__yellow),
+    var(--yellow__green)
+  );
   border: none;
   text-transform: capitalize;
   position: absolute;
@@ -156,9 +161,10 @@ body {
 }
 
 .watch-here__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* display: flex;
+  justify-content: space-between; */
   padding: 0rem calc((100vw - 1300px) / 2);
   height: 400px;
   background: #323003;
@@ -166,22 +172,43 @@ body {
 
 .watch-here__wrapper .left__link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  align-items: flex-end;
   text-align: end;
-  width: 80%;
+}
+
+.watch-here__wrapper .right__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .watch-here__wrapper .left__link a {
   color: var(--white);
 }
 
-.left__link click-to-watch {
-  display: inline-flex;
-  background: var(--bright__yellow);
-}
-
 .left__link a {
   font-size: 50px;
-  padding-left: 100px;
+  width: 80%;
   font-weight: 600;
+}
+
+.left__link .click-to-watch {
+  background: linear-gradient(
+    to bottom,
+    var(--bright__yellow),
+    var(--yellow__green)
+  );
+  border: none;
+  margin-top: 10px;
+  height: 40px;
+  width: 65%;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.left__link .click-to-watch:hover {
+  background: var(--dark__yellow);
 }
