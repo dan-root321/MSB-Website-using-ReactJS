@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bright__yellow: #f8ff00;
+  --dark__yellow: #c79d38;
+  --yellow__green: #9acd32;
+  --black: #000000;
+  --white: #fff;
+  --gold: #70571c;
+  --light-gray: #d8d9da;
+  --brown: #322703;
+  --bullet-gray: #1b1b1b;
+
+  --h1: 72px;
+  --h2: 58px;
+}
+
+body {
+  overflow-x: hidden;
+  /* background: black; */
+}
+
+.container {
+  padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background: #313131;
+  border-bottom: 10px solid #c79d38;
+}
+
+.header__wrapper {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a img {
+  padding: 0 5rem;
+}
+
+.nav__item ul {
+  display: flex;
+  padding: 0 5rem;
+  list-style: none;
+  gap: 3rem;
+}
+
+.nav__item ul li a {
+  display: flex;
+  font-weight: 900;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__item ul li a:hover {
+  color: #c79d38;
+}
+
+/*----------------Hero Section----------------*/
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top__hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.top__hero p:nth-child(1) {
+  font-size: 32px;
+  background: #f8ff00;
+}
+
+.top__hero span {
+  font-weight: 600;
+}
+
+.top__hero h1 {
+  color: #70571c;
+  line-height: 80px;
+  font-size: 72px;
+  text-align: center;
+}
+
+.top__hero h2 {
+  /* margin-top: -10px; */
+  font-size: 58px;
+}
+
+.top__hero p:nth-child(4) {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.mid__vid {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  row-gap: 2rem;
+}
+
+.mid__vid img:nth-child(1) {
+  position: absolute;
+  z-index: -999;
+  transform: translateX(-35rem);
+  width: 476px;
+  height: 595px;
+  object-fit: cover;
+}
+
+.mid__vid img:nth-child(3) {
+  position: absolute;
+  z-index: -999;
+  transform: translateX(35rem);
+  width: 476px;
+  height: 595px;
+  object-fit: cover;
+}
+
+.get-started__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.get-started__wrapper .enrollnow {
+  width: 400px;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(
+    to bottom,
+    var(--bright__yellow),
+    var(--yellow__green)
+  );
+  border: none;
+  text-transform: capitalize;
+  position: absolute;
+  margin-top: 5rem;
+  margin-left: 17rem;
+}
+
+.get-started__wrapper .enrollnow:hover {
+  background: var(--dark__yellow);
+}
+
+.watch-here__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0rem calc((100vw - 1300px) / 2);
+  height: 400px;
+  background: #323003;
+}
+
+.watch-here__wrapper .left__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
+.watch-here__wrapper .left__link img {
+  position: absolute;
+  margin-top: 11rem;
+  transform: translateX(100px);
+}
+
+.watch-here__wrapper .right__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watch-here__wrapper .left__link a {
+  color: var(--white);
+}
+
+.left__link a {
+  font-size: 50px;
+  width: 80%;
+  font-weight: 600;
+}
+
+.left__link .click-to-watch {
+  background: linear-gradient(
+    to bottom,
+    var(--bright__yellow),
+    var(--yellow__green)
+  );
+  border: none;
+  margin-top: 10px;
+  height: 40px;
+  width: 65%;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.left__link .click-to-watch:hover {
+  background: var(--dark__yellow);
+}
+
+/*----------------What you learn Section----------------*/
+
+.WUL {
+  padding: 3rem 0;
+}
+.WUL__wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.WUL__wrapper h2 {
+  font-size: var(--h2);
+  color: var(--gold);
+}
+
+.WUL__holder {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 50px;
+}
+
+.WUL__card:nth-child(2) {
+  background: var(--light-gray);
+}
+
+.WUL__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image__holder {
+  height: 250px;
+  width: 400px;
+}
+
+.image__holder img {
+  height: auto;
+  width: 400px;
+  object-fit: fill;
+}
+
+.WUL__card h2 {
+  padding: 1rem 0;
+  font-size: 32px;
+}
+
+.WUL__card p {
+  padding: 0.7em 0.8em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.last__letter {
+  padding-top: 50px;
+}
+
+.last__letter h2 {
+  font-weight: 800;
+}
+
+.last__letter p {
+  padding-top: 20px;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.last__letter span {
+  font-weight: 800;
+}
+
+/*----------------Call To Action Section----------------*/
+
+.CTA__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0rem calc((100vw - 1300px) / 2);
+  height: 400px;
+  background: var(--brown);
+  border-bottom: white 3px solid;
+}
+
+.CTA__wrapper .left__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
+.CTA__wrapper .left__link img {
+  position: absolute;
+  margin-top: -2rem;
+  transform: translateX(620px);
+}
+
+.CTA__wrapper .right__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left__link h2 {
+  font-size: 45px;
+  width: 100%;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.left__link .click-to-watch {
+  background: linear-gradient(
+    to bottom,
+    var(--bright__yellow),
+    var(--yellow__green)
+  );
+  border: none;
+  margin-top: 10px;
+  height: 40px;
+  width: 65%;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.left__link .click-to-watch:hover {
+  background: var(--dark__yellow);
+}
+
+/*----------------MSB__academy Section----------------*/
+
+.MSB__academy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+}
+
+.top__msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.top__msg h2 {
+  color: var(--white);
+  font-size: var(--h2);
+  text-align: center;
+}
+
+.MSB__bullet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: var(--bullet-gray);
+  width: 1200px;
+  border-radius: 50px;
+  padding: auto 100px;
+}
